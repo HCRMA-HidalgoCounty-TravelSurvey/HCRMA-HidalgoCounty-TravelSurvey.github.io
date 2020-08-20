@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>HCRMA Resident Survey</title>
+</head>
+<body>
+
+<script>
+  urlsSp = ['https://www.surveymonkey.com/r/CNJDZWN%27,%27https://www.surveymonkey.com/r/CMZZ32K', 'https://www.surveymonkey.com/r/CFB5QNH', 'https://www.surveymonkey.com/r/CNNF5TS'];
+  urlsEn = ['https://www.surveymonkey.com/r/CS8D7WV', 'https://www.surveymonkey.com/r/CQT8W7Q', 'https://www.surveymonkey.com/r/Y53Z7ND', 'https://www.surveymonkey.com/r/Y6JNL69'];
+
+  var myrandom=Math.round(Math.random()*3);
+
+function openUrlSp(){
+  url = urlsSp[myrandom];
+  window.location = url;
+}
+
+function openUrlEn(){
+  url = urlsEn[myrandom];
+  window.location = url;
+}
+  </script>
+
+<div style="text-align:center">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM3g0BKtLE9Ir1w9IAJTWy1SHwTiqV16djq-pD4aKc07HmDjQ&s"
+   class="centerImage" alt="HCRMA Logo" height="120" width="350">
+</div>
+
+<div style="text-align:center">
+  <a href="javascript:openUrlEn()">Take me to the survey! (English)</a>
+  <a href="javascript:openUrlSp()">Llevame a la encuesta! (Español)</a>
+ </div>
+
+</body>
+</html>
